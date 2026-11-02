@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:com.rkmresearch.dummy.Pages"
+    x:Class="com.rkmresearch.dummy.AppShell"
+    FlyoutBehavior="Disabled"
+    Shell.NavBarIsVisible="False"
+    Shell.BackgroundColor="#000000"
+    Shell.ForegroundColor="#FFFFFF"
+    Shell.TabBarBackgroundColor="#000000"
+    Shell.TabBarForegroundColor="#FFFFFF"
+    Shell.TabBarTitleColor="#FFFFFF"
+    Shell.TabBarUnselectedColor="#A0A0A0">
+
+    <TabBar>
+        <ShellContent Title="Home"
+                      Route="home"
+                      Icon="home.png"
+                      ContentTemplate="{DataTemplate pages:HomePage}" />
+        <ShellContent Title="Draws"
+                      Route="draws"
+                      Icon="draws.png"
+                      ContentTemplate="{DataTemplate pages:DrawsPage}" />
+        <ShellContent Title="Investments"
+                      Route="investments"
+                      Icon="investments.png"
+                      ContentTemplate="{DataTemplate pages:InvestmentsPage}" />
+        <ShellContent Title="Holders"
+                      Route="holders"
+                      Icon="holders.png"
+                      ContentTemplate="{DataTemplate pages:HoldersPage}" />
+    </TabBar>
+</Shell>
